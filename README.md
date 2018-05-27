@@ -1,1 +1,1 @@
-A program that gets the current weather 
+A program that gets the current weather in New York
