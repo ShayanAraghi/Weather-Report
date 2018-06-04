@@ -6,7 +6,7 @@ from urllib.request import Request  # extended to a second line for better expla
 class currentWeather:
     def openCurrentWebsite(self):
         """ Open The Weather Channel website using urllib"""
-        getUrl = "https://weather.com/weather/today/l/USNY0996:1:US"  # state the base url on it's own to make it easier to access in more elaborate scripts
+        getUrl = "https://weather.com/weather/today/l/USNY0996:1:US"  # state the base url 
         user_agent = 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3'
 
         headers = {'User-Agent': user_agent}
