@@ -1,1 +1,1 @@
-A program that gets the current weather in New York on The Weather Channel's website
+A program that asks the user for their location and gets the weather from weather.gov.
