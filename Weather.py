@@ -55,7 +55,7 @@ def getWebsiteUrl(area):
 
     #click the go button to get to the next page
     go = driver.find_element_by_id('btnSearch')
-    time.sleep(5)
+    time.sleep(2)
     go.click()
 
 
