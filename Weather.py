@@ -44,6 +44,7 @@ def getWebsiteUrl(area):
 
     options = Options()
     options.set_headless(headless=True)
+    #add a path to the chromedriver so the program can open up chrome
     driver = webdriver.Chrome(options=options, executable_path=r'/path/to/chromedriver')
     driver.get('https://www.weather.gov/')
 
