@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 from selenium.webdriver.common.keys import Keys
 
+
 """Create a current Weather class that gets the current weather"""
 class currentWeather:
     def openCurrentWebsite(self,url):
@@ -41,11 +42,13 @@ class currentWeather:
 def getWebsiteUrl(area):
     """find the url with the weather of where the user is"""
 
-    driver = webdriver.Firefox()
+    options = Options()
+    options.set_headless(headless=True)
+    driver = webdriver.Chrome(options=options, executable_path=r'/path/to/chromedriver')
+    driver.get('https://www.weather.gov/')
 
 
     driver.get('https://www.weather.gov/')
-
     location = driver.find_element_by_id('inputstring')
 
     location.clear()
@@ -57,11 +60,11 @@ def getWebsiteUrl(area):
     go = driver.find_element_by_id('btnSearch')
     time.sleep(2)
     go.click()
-
+    time.sleep(2)
 
     url = driver.current_url
+    driver.quit
 
-    driver.quit()
     return url
 
 
