@@ -78,8 +78,8 @@ def printCurrentWeather(current,url):
     #print the current weather conditions
     print('The current weather conditions is ' + current.conditions(url))
 
-#ask user for area
-area = input('What Area would you like to know the weather of?')
+#ask user for zip code
+area = input('What zip code would you like to know the weather of?')
 
 #get the url of the website
 getUrl = getWebsiteUrl(area)
